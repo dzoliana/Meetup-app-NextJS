@@ -4,6 +4,7 @@
 
 Meetup-app is a web application that represents an exercise in learning NextJS.
 The focus is on creating new meetups, sending them to some backend and saving them in the database.
+Creeating a connection between the frontend part of the application and the MongoDB database via an API route, which contributes to the functionality of the real backend. The displayed password is for example only, the real one has been changed.
 
 ## About Next
 
