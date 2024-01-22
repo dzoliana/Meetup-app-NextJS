@@ -39,7 +39,7 @@ export async function getStaticProps() {
   //fetch data from API
 
   /* const client = await MongoClient.connect(
-    "mongodb+srv://instanadz:ana123@cluster0.hsckvsf.mongodb.net/meetups?retryWrites=true&w=majority"
+    "mongodb+srv://<username>:<password>@cluster0.hsckvsf.mongodb.net/meetups?retryWrites=true&w=majority"
   ); */
   /* const db = client.db();
   const meetupsCollection = db.collection("meetups");
