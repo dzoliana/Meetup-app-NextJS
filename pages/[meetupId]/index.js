@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 
 function MeetupDetails(props) {
+  console.log(props);
   return (
     <Fragment>
       <Head>
@@ -30,7 +31,7 @@ export async function getStaticPaths() {
   const db = client.db();
   const meetupsCollection = db.collection(`${process.env.DB_COLLECTION}`);
   const meetups = await meetupsCollection.find({}, { _id: 1 }).toArray();
-  client.close();
+  await client.close();
 
   return {
     fallback: false,
@@ -51,6 +52,7 @@ export async function getStaticProps(context) {
   const client = await MongoClient.connect(
     `mongodb+srv://${user}:${password}@cluster0.hsckvsf.mongodb.net/meetups?retryWrites=true&w=majority`
   );
+
   const db = client.db();
   const meetupsCollection = db.collection(`${process.env.DB_COLLECTION}`);
   const selectedMeetup = await meetupsCollection.findOne({
