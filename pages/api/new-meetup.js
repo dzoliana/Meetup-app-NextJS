@@ -12,6 +12,7 @@ async function handler(req, res) {
     );
     const db = client.db();
     const meetupsCollection = db.collection("meetups"); */
+
     const user = process.env.DB_USER;
     const password = process.env.DB_PASS;
 
