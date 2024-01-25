@@ -72,3 +72,9 @@
 _React + Next_
 
 The React app dev server is started via "npm run dev".
+
+## Page Link
+
+The page is deployed via [Vercel](https://vercel.com/ "Vercel"):
+
+- [meetup-app](https://meetup-app-next-qdlx4y4gs-anas-projects-c631fda7.vercel.app/ "Vercel")
