@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import Head from "next/head";
 import MeetupList from "../components/meetups/MeetupList";
 import { MongoClient } from "mongodb";
-require("dotenv").config();
 
 /* const DUMMY_MEETUPS = [
   {
@@ -23,6 +22,7 @@ require("dotenv").config();
 ]; */
 
 function HomePage(props) {
+  require("dotenv").config();
   return (
     <Fragment>
       <Head>
