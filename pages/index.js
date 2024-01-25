@@ -22,7 +22,6 @@ import { MongoClient } from "mongodb";
 ]; */
 
 function HomePage(props) {
-  require("dotenv").config();
   return (
     <Fragment>
       <Head>
